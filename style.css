@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-prewed.jpg);
+  background-image: url(img/ST2_3260.JPG);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -37,7 +37,7 @@ body {
 
 .hero h1 {
   font-family: 'Sacramento', cursive;
-  font-size: 6rem;
+  font-size: 8rem;
 }
 
 .hero h4 {
@@ -49,14 +49,19 @@ body {
 }
 
 .hero a {
-  color: var(--pink);
-  background-color: white;
+  color: white;
+  background-color: var(--bg);
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: var(--pink);
-  color: white;
+  background-color: white;
+  color: var(--bg);
+}
+
+.home h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
 }
 
 .mynavbar {
@@ -80,7 +85,7 @@ body {
 }
 
 .home {
-  background-image: url(img/bg.png);
+
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
@@ -112,7 +117,10 @@ body {
 }
 
 .home .couple {
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
 }
 
 .home .couple h3 {
@@ -122,7 +130,12 @@ body {
 }
 
 .home .couple img {
-  width: 100%;
+  width: 80%;
+  filter: grayscale();
+}
+
+.home .couple img:hover {
+  filter: contrast();
 }
 
 .home .heart {
@@ -308,42 +321,35 @@ body {
   background-color: #f5f5f5;
 }
 
-.rsvp {
-  background-color: var(--bg);
+/* Element HPL */
+.element-hpl {
+  min-height: 100vh;
+  background-image: url('./img/Bg-WireFrame.jpg');
+  background-size: cover;
+  filter: grayscale();
 }
 
-.rsvp h2 {
-  font-size: 4.5rem;
-}
-
-.rsvp p {
+.element-hpl h1 {
+  font-size: 60px;
+  font-family: 'Sacramento', cursive;
   color: white;
+  font-weight: 600;
 }
 
-.rsvp form label {
-  color: white;
-}
-
-.rsvp button {
-  background-color: var(--pink);
-  color: white;
-  border: 1px solid var(--pink);
-}
-
-.rsvp button:hover {
-  background-color: white;
-  color: var(--pink);
-  border: 1px solid white;
+/* Element Merid */
+.element-srm-merid h2 {
+  font-size: 80px;
+  font-family: 'Sacramento', cursive;
 }
 
 footer {
-  padding: 3rem;
-  background-color: var(--pink);
+  padding: 1rem;
+  background-color: var(--bg);
   color: white;
 }
 
 footer a {
-  color: var(--bg);
+  color: white;
   font-weight: bold;
   text-decoration: none;
 }
@@ -381,6 +387,7 @@ footer li {
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -400,7 +407,7 @@ footer li {
     font-size: 75%;
   }
 
-  .simply-countdown > .simply-section {
+  .simply-countdown>.simply-section {
     padding: 70px;
   }
 
@@ -444,7 +451,7 @@ footer li {
     font-size: 65%;
   }
 
-  .simply-countdown > .simply-section {
+  .simply-countdown>.simply-section {
     padding: 60px;
     margin: 5px;
   }
@@ -462,6 +469,11 @@ footer li {
     width: 140px;
     height: 140px;
   }
+
+  .gallery .row .mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* mobile phone */
@@ -470,7 +482,7 @@ footer li {
     font-size: 60%;
   }
 
-  .simply-countdown > .simply-section {
+  .simply-countdown>.simply-section {
     padding: 45px;
     margin: 3px;
   }
