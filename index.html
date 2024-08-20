@@ -222,10 +222,12 @@
           <h1>Gift Wedding</h1>
           <div class="element-atm py-3 px-3">
             <div class="elemet-bca-pdh">
-              <img src="./img/bca padiah-01.jpg" alt="" style="border-radius: 16px;">
+              <img id="bca-pdh" src="./img/bca padiah-01.jpg" alt="" style="border-radius: 16px;"
+                onclick="copyToClipboard('8831805048 (Siti padila / BCA)')">
             </div>
             <div class="elemet-bca-sdk py-3">
-              <img src="./img/bca sodik-01-01.png" alt="">
+              <img id="bca-sdk" src="./img/bca sodik-01-01.png" alt=""
+                onclick="copyToClipboard('8831235179 (Ahmad Nur Shodiq/ BCA)')">
             </div>
           </div>
         </div>
@@ -293,6 +295,17 @@
 
   </script>
 
+  <script>
+    function copyToClipboard(text) {
+      const tempInput = document.createElement("input");
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+      alert("Nomor ATM telah disalin: " + text);
+    }
+  </script>
   <script>
     const rootElement = document.querySelector(":root");
     const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
