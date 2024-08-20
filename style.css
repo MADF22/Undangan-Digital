@@ -543,9 +543,15 @@ footer li {
 
   /* story */
   .story .row {
-    padding: 30px 20px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .story span {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 10px;
   }
 
   .story img {
@@ -559,6 +565,14 @@ footer li {
     margin-right: 60px;
     margin-bottom: 20px;
   }
+}
+
+/* simply-countdown */
+.simply-countdown {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
 }
 
 /* mobile phone */
