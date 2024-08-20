@@ -330,10 +330,6 @@ a {
   right: auto;
 }
 
-.gallery {
-  background-image: url('./img/bg-01.jpg');
-  background-size: cover;
-}
 
 /* Element HPL */
 .element-hpl {
@@ -353,6 +349,7 @@ a {
 /* Element Merid */
 .element-srm-merid {
   background-image: url(./img/bg-01.jpg);
+  background-position: center;
 }
 
 .element-srm-merid h2 {
@@ -512,6 +509,55 @@ footer li {
   .gallery .row .mobile {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Home */
+  .home h1 {
+    font-size: 35px;
+  }
+
+  /* Element HPL */
+  .element-hpl {
+    min-height: 100vh;
+    background-image: url('./img/Bg-WireFrame.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale();
+  }
+
+  /* .element-wedding-qoutes */
+  .element-wedding-qoutes h6 {
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* element-gift-wedding  */
+  .element-gift-wedding {
+    padding: 10px;
+    margin: auto;
+  }
+
+  .element-gift-wedding img {
+    width: 100%;
+  }
+
+  /* story */
+  .story .row {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .story img {
+    padding: 20px;
+    width: 100%;
+  }
+
+  /* audio-container */
+  #audio-container .audio-icon-wrapper {
+    width: 10px;
+    margin-right: 60px;
+    margin-bottom: 20px;
   }
 }
 
